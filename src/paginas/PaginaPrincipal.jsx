@@ -1,8 +1,12 @@
-import React from 'react'
+import Carrusel from '../componentes/carrusel/Carrusel'
+import QueHacemos from '../componentes/actividades/QueHacemos'
 
 const PaginaPrincipal = () => {
   return (
-    <>PaginaPrincipal</>
+    <>
+    <Carrusel/>
+    <QueHacemos/>
+    </>
   )
 }
 
