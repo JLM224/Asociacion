@@ -1,0 +1,14 @@
+.cardC {
+  width: 300px;
+}
+.boton {
+    padding: 8px;
+    background-color: #005F73;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.boton:hover {
+    transform: scale(1.1);
+}
