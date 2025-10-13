@@ -1,8 +1,10 @@
-
+import Actividades from "../componentes/nuestraLabor/Actividades"
 
 const NuestraLabor = () => {
   return (
-    <>NuestraLabor</>
+    <>
+    <Actividades/>
+    </>
   )
 }
 

@@ -1,7 +1,8 @@
-import './QueHacemos.css'
+import { Card, Col, Container, Row } from 'react-bootstrap'
+import './Actividades.css'
 
-const QueHacemos = () => {
-const diapositivas = [{
+const Actividades = () => {
+const acciones = [{
     id:1,
     titulo: '1-Educación y sensibilización',
     descripcion: <>
@@ -45,18 +46,26 @@ const diapositivas = [{
 }]
   return (
     <>
-    <h1 className="text-center t1">¿Qué Hacemos?</h1>
+    <Container fluid className='mt-4'>
+      <h1 className="text-center t1">¿Qué Hacemos?</h1>
       <h4 className='t2' style={{ textAlign: 'justify' }} >Desarrollamos una variedad de actividades orientadas al fortalecimiento de los derechos de los consumidores:</h4>
-    <div className="card-container">
-      {diapositivas.map((item) => (
-        <div key={item.id} className="card">
-          <h3>{item.titulo}</h3>
-          <div className="card-description">{item.descripcion}</div>
-        </div>
-      ))}
-    </div>
+    </Container>
+    <Container fluid className="my-4">
+        <Row className="g-3">
+          {acciones.map((item) => (
+            <Col key={item.id} xs={12} md={6}>
+              <Card className="h-100 shadow-sm">
+                <Card.Body>
+                  <Card.Title>{item.titulo}</Card.Title>
+                  <Card.Text>{item.descripcion}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   )
 }
 
-export default QueHacemos
+export default Actividades
