@@ -10,7 +10,8 @@ const Contacto = () => {
             <Col xs={12} md={6}>
             <FormC/>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6}>            
+        <h5 className="text-center">Dónde nos ubicamos?</h5>
             <MediosDeComunicacion/>
             </Col>
         </Row>

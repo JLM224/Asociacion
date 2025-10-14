@@ -1,6 +1,8 @@
-import { Container } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
+import LinksContacto from "../mediosDeComunicacion/LinksContacto";
+import qrImg from "/Qr.jpeg";
+import Mapa from "../mediosDeComunicacion/Mapa";
 import './Footer.css'
-
 
 const FooterC = () => {
 function obtenerAnioActual() {
@@ -10,7 +12,20 @@ function obtenerAnioActual() {
   return (
     <>
     <Container fluid className="footer">
-        <p>&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuario </p>
+        <Row className="text-center g-2">
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <LinksContacto/>
+          </Col>
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <img src={qrImg} alt="Código Qr" width={200} height={200} />
+          </Col>
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <Mapa/>
+          </Col>
+        </Row>
+        <Col xs="12" className="my-3 d-flex flex-column align-items-center justify-content-center">
+        <h5>&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuario </h5>
+        </Col>
     </Container>
     </>
   )
