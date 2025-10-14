@@ -1,12 +1,12 @@
+import CardsCA from '../componentes/cards/CardsCA'
 import Carrusel from '../componentes/carrusel/Carrusel'
-import QueHacemos from '../componentes/actividades/QueHacemos'
-import CardsCA from '../componentes/cardsC/CardsCA'
+import TarjetasPrincipales from '../componentes/tarjetas/TarjetasPrincipales'
 
 const PaginaPrincipal = () => {
   return (
     <>
     <Carrusel/>
-    <QueHacemos/>
+    <TarjetasPrincipales/>
     <CardsCA/>
     </>
   )
