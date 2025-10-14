@@ -5,8 +5,7 @@ const mapaUrl =
     "https://www.google.com/maps?q=Virgen+de+la+Merced+105,+San+Miguel+de+Tucumán,+Argentina&output=embed";
   return (
     <>
-    <Container fluid className="text-center my-3">
-        <h5>Dónde nos ubicamos?</h5>
+    <Container fluid>
         <div>
           <iframe
             title="Mapa Virgen de la Merced 105"
