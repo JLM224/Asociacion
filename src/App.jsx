@@ -10,6 +10,7 @@ import Contacto from "./paginas/Contacto";
 import Error404 from "./paginas/Error404";
 import FooterC from "./componentes/footer/FooterC";
 import './App.css';
+import BotonWhatsapp from "./componentes/botones/BotonWhatsapp";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
+          <BotonWhatsapp/>
         </div>
       </Router>
       <FooterC/>
