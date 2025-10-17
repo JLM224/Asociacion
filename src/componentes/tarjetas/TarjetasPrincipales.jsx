@@ -1,6 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
-import './TarjetasPrincipales.css'
 
 const TarjetasPrincipales = () => {
   return (
