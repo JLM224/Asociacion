@@ -1,3 +1,29 @@
-.navbar {
-    background-color: #005F73;
+.navbar, 
+.navbar .dropdown-menu {
+  background-color: #005F73;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #f8d210 !important;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f8d210;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 100%;
 }

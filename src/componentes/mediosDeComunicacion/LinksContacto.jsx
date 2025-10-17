@@ -27,8 +27,8 @@ const links = [
     },
     {
       icon: <FaEnvelope />,
-      text: "Correo electrónico",
-      href: "mailto:ejemplo@correo.com",
+      text: "adepcu25@gmail.com",
+      href: "mailto:adepcu25@gmail.com",
     },
     {
       icon: <FaInstagram />,
