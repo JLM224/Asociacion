@@ -4,12 +4,12 @@ import PaginaPrincipal from "./paginas/PaginaPrincipal";
 import NuestraLabor from "./paginas/NuestraLabor";
 import SitiosDeInteres from "./paginas/SitiosDeInteres";
 import Opina from "./paginas/Opina";
-import Contactanos from "./paginas/Contactanos";
 import Contacto from "./paginas/Contacto";
 import Error404 from "./paginas/Error404";
 import FooterC from "./componentes/footer/FooterC";
-import './App.css';
 import BotonWhatsapp from "./componentes/botones/BotonWhatsapp";
+import CharlasInstitucionales from "./paginas/CharlasInstitucionales";
+import './App.css';
 
 const App = () => {
   return (
@@ -22,8 +22,8 @@ const App = () => {
             <Route path="/NuestraLabor" element={<NuestraLabor />} />
             <Route path="/SitiosDeInteres" element={<SitiosDeInteres />} />
             <Route path="/Opina" element={<Opina />} />
-            <Route path="/Contactanos" element={<Contactanos />} />
             <Route path="/Contacto" element={<Contacto />} />
+            <Route path="/CharlasInstitucionales" element={<CharlasInstitucionales />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
           <BotonWhatsapp/>

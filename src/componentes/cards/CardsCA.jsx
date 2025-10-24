@@ -18,9 +18,9 @@ const CardsCA = () => {
           </Col>
           <Col md="5" className="d-flex justify-content-center">
             <Card className="cardC text-center">
-              <Card.Img variant="top" src="/asociate.jpg" />
-              <NavLink to="/Asociate" className="boton mt-3">
-                Asociate
+              <Card.Img variant="top" src="/charla.png" />
+              <NavLink to="/CharlasInstitucionales" className="boton mt-3">
+                Programar Charlas
               </NavLink>
             </Card>
           </Col>
