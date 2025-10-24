@@ -1,14 +1,13 @@
+import { Container, Form } from "react-bootstrap";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Container, Form } from 'react-bootstrap';
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 const service_id = import.meta.env.VITE_SERVICE_ID_EMAILJS;
-const template_id = import.meta.env.VITE_TEMPLATE_ID_CONTACTO;
+const template_id = import.meta.env.VITE_TEMPLATE_ID_CHARLAS;
 const public_key = import.meta.env.VITE_PUBLIC_KEY_EMAILJS;
 
-export const FormC = () => {
-  const form = useRef();
-
+const FormInstituciones = () => {
+const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -33,19 +32,18 @@ export const FormC = () => {
       })
     })
   }
-
   return (
-    <Container fluid className='my-3'>
-    <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm bg-light form">
-            <h5 className="text-center">Consultas por Correo</h5>
+    <>
+    <Container fluid className="w-50 my-5">
+        <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm bg-light form">
+            <h5 className="text-center my-2">¿Le gustaría que brindemos una charla en su institución?</h5>
             <Form.Group className="mb-3" controlId="name">
               <Form.Label>Nombre y Apellido</Form.Label>
               <Form.Control 
                 type="text"
                 name="name"
                 placeholder="Ingresa tu Nombre y Apellido"
-                required
-              />
+                required/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="email">
@@ -54,30 +52,48 @@ export const FormC = () => {
                 type="email"
                 name="email"
                 placeholder="Ingresa tu Email"
-                required
-              />
+                required/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="institucion">
+              <Form.Label>Nombre de la Institución</Form.Label>
+              <Form.Control
+                type="text"
+                name="institucion"
+                placeholder="Ejemplo: Escuela N°45, Universidad Nacional..."
+                required/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="cargo">
+              <Form.Label>Cargo o función</Form.Label>
+              <Form.Control
+                type="text"
+                name="cargo"
+                placeholder="Ejemplo: Directivo, docente, coordinador..."
+                required/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="mensaje">
               <Form.Label>Mensaje</Form.Label>
-              <Form.Control 
-                as="textarea"
-                name="mensaje"
-                rows={4}
-                placeholder="Ingresa tu consulta"
-                required
-              />
+                <Form.Control 
+                  as="textarea"
+                  name="mensaje"
+                  rows={2}
+                  placeholder="Ingresa tu mensaje"
+                  required
+                          />
             </Form.Group>
 
         <div className="text-center mt-3">
           <input 
             type="submit" 
-            value="Enviar Consulta"
+            value="Enviar datos"
             className="btn btn-primary"/>
         </div>
           </Form>
     </Container>
-  );
-};
+    </>
+  )
+}
 
-export default FormC
+export default FormInstituciones

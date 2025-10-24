@@ -57,7 +57,7 @@ const acciones = [{
               <Card className="h-100 shadow-sm">
                 <Card.Body>
                   <Card.Title>{item.titulo}</Card.Title>
-                  <Card.Text>{item.descripcion}</Card.Text>
+                  <div>{item.descripcion}</div>
                 </Card.Body>
               </Card>
             </Col>

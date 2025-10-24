@@ -1,8 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap"
 import FormC from "../componentes/formularios/FormC"
 import MediosDeComunicacion from "../componentes/mediosDeComunicacion/MediosDeComunicacion"
+import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
+import { useEffect } from "react"
 
 const Contacto = () => {
+useEffect(() => {
+  cambiarTituloPagina("Contacto")
+},[])
   return (
     <>
     <Container fluid>

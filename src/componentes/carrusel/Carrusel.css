@@ -1,97 +1,43 @@
 .carrusel {
-  width: 100%;
-  max-height: 80vh;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
+
 .carrusel img {
-  object-position: center top;
-  height: 70vh;
-  filter: brightness(70%);
-  transition: transform 0.6s ease, filter 0.6s ease;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
-.carrusel:hover img {
-  transform: scale(1.03);
-  filter: brightness(65%);
+
+.carrusel img:hover {
+  transform: scale(1.05);
 }
+
 .carousel-caption {
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.85) 100%);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.5rem;
   border-radius: 10px;
-  padding: 2rem;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 85%;
-  max-width: 900px;
-  color: #fff;
-  text-align: left;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  backdrop-filter: blur(6px);
-}
-.carousel-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-.carousel-text ul {
-  margin-top: 0.5rem;
-}
-.carousel-text li {
-  list-style-type: disc;
-  margin-left: 1rem;
-}
-@media (max-width: 992px) {
-  .carrusel img {
-    height: 60vh;
-  }
-  .carousel-caption {
-    width: 90%;
-    padding: 1.5rem;
-    bottom: 8%;
-  }
-  .carousel-caption h2 {
-    font-size: 1.6rem;
-  }
-  .carousel-text {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .carrusel img {
-    height: 50vh;
-  }
-
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.75);
-    width: 95%;
-    padding: 1rem;
-    bottom: 5%;
-  }
-
-  .carousel-caption h2 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  .carousel-text {
-    font-size: 0.9rem;
-    text-align: left;
-  }
-
-  .carousel-text ul {
-    padding-left: 1rem;
-  }
-}
-.carousel-caption,
-.carousel-caption h2,
-.carousel-text {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  animation: fadeInUp 1s ease 0.5s forwards;
 }
-.carousel-item.active .carousel-caption,
-.carousel-item.active .carousel-caption h2,
-.carousel-item.active .carousel-text {
-  opacity: 1;
-  transform: translateY(0);
+
+.carousel-text p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption { padding: 0.8rem 1rem; }
+  .carousel-text p { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .carousel-text p { font-size: 0.8rem; }
 }
