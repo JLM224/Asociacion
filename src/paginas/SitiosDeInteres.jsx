@@ -1,4 +1,6 @@
+import { useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
+import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
 
 const links = [
 { id: 1, 
@@ -35,6 +37,9 @@ const links = [
 ]
 
 const SitiosDeInteres = () => {
+useEffect(() => {
+  cambiarTituloPagina("Sitios de Interes")
+},[])
   return (
     <Container fluid className="my-3">
       <Row className="g-3">
