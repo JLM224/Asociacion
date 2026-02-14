@@ -10,7 +10,7 @@ const NavbarC = () => {
     <Navbar expand="lg" className="navbar" variant="dark">
       <Container className='text-white'>
         <NavLink className="nav-link" to="/">
-        <img src="" alt="Logo"/>
+        <img src="/logo.jpeg" alt="Logo" className="logo"/>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

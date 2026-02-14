@@ -24,7 +24,7 @@ function obtenerAnioActual() {
           </Col>
         </Row>
         <Col xs="12" className="my-3 d-flex flex-column align-items-center justify-content-center">
-        <h5 className="Adep">&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuario </h5>
+        <p className="Adep">&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuarios </p>
         </Col>
     </Container>
     </>
