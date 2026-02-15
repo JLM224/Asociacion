@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 const service_id = import.meta.env.VITE_SERVICE_ID_EMAILJS;
 const template_id = import.meta.env.VITE_TEMPLATE_ID_CONTACTO;
 const public_key = import.meta.env.VITE_PUBLIC_KEY_EMAILJS;
+import './Formularios.css'
 
 export const FormC = () => {
   const form = useRef()
@@ -61,7 +62,7 @@ export const FormC = () => {
 
   return (
     <Container fluid className='my-3'>
-      <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm bg-light form">
+      <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm formulario">
         <h5 className="text-center">Consultas por Correo</h5>
 
         <Form.Group className="mb-3" controlId="name">
@@ -108,7 +109,7 @@ export const FormC = () => {
           <input
             type="submit"
             value="Enviar Consulta"
-            className="btn btn-primary"
+            className="btn btn-personalizado"
           />
         </div>
       </Form>

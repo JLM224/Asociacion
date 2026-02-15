@@ -7,9 +7,9 @@ useEffect(() => {
   cambiarTituloPagina("Nuestra Labor")
 },[])
   return (
-    <>
-    <Actividades/>
-    </>
+    <div data-aos="fade-right">
+      <Actividades />
+    </div>
   )
 }
 

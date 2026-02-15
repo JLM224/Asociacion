@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 const service_id = import.meta.env.VITE_SERVICE_ID_EMAILJS;
 const template_id = import.meta.env.VITE_TEMPLATE_ID_CHARLAS;
 const public_key = import.meta.env.VITE_PUBLIC_KEY_EMAILJS;
+import './Formularios.css'
 
 const FormInstituciones = () => {
   const form = useRef()
@@ -66,7 +67,7 @@ const FormInstituciones = () => {
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col xs={12} sm={10} md={8} lg={6}>
-          <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm bg-light">
+          <Form ref={form} onSubmit={sendEmail} className="p-3 border rounded shadow-sm formulario">
             <h5 className="text-center my-2">
               ¿Le gustaría que brindemos una charla en su institución?
             </h5>
@@ -141,7 +142,7 @@ const FormInstituciones = () => {
               <input
                 type="submit"
                 value="Enviar datos"
-                className="btn btn-primary"
+                className="btn btn-personalizado"
               />
             </div>
           </Form>

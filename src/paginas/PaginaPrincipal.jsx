@@ -5,14 +5,23 @@ import TarjetasPrincipales from '../componentes/tarjetas/TarjetasPrincipales'
 import { cambiarTituloPagina } from '../funcionesAuxiliares/CambiarTituloPagina'
 
 const PaginaPrincipal = () => {
-useEffect(() => {
-  cambiarTituloPagina("Pagina Principal")
-},[])
+  useEffect(() => {
+    cambiarTituloPagina("Pagina Principal");
+  }, []);
+
   return (
     <>
-    <Carrusel/>
-    <TarjetasPrincipales/>
-    <CardsCA/>
+      <div data-aos="fade-up">
+        <Carrusel />
+      </div>
+      
+      <div data-aos="fade-up" data-aos-delay="200">
+        <TarjetasPrincipales />
+      </div>
+      
+      <div data-aos="fade-up" data-aos-delay="400">
+        <CardsCA />
+      </div>
     </>
   )
 }

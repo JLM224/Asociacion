@@ -13,17 +13,29 @@ function obtenerAnioActual() {
     <>
     <Container fluid className="footer">
         <Row className="text-center g-2">
-          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800">
           <LinksContacto/>
           </Col>
-          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800">
           <img src={qrImg} alt="Código Qr" width={200} height={200} />
           </Col>
-          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center">
+          <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800">
           <Mapa/>
           </Col>
         </Row>
-        <Col xs="12" className="my-3 d-flex flex-column align-items-center justify-content-center">
+        <Col xs="12" className="my-3 d-flex flex-column align-items-center justify-content-center"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="800">
         <p className="Adep">&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuarios </p>
         </Col>
     </Container>

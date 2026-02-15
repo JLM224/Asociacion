@@ -52,8 +52,11 @@ const acciones = [{
     </Container>
     <Container fluid className="my-4">
         <Row className="g-3">
-          {acciones.map((item) => (
-            <Col key={item.id} xs={12} md={6}>
+          {acciones.map((item, i) => (
+            <Col key={item.id} xs={12} md={6}
+            data-aos="fade-up"
+            data-aos-delay={i * 100}
+            data-aos-duration="800">
               <Card className="h-100 shadow-sm">
                 <Card.Body>
                   <Card.Title>{item.titulo}</Card.Title>

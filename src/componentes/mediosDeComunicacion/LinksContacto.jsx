@@ -51,7 +51,9 @@ const links = [
             target="_blank"
             rel="noopener noreferrer"
             className="text-decoration-none d-flex align-items-center justify-content-center gap-2"
-          >
+            data-aos="fade-right"
+            data-aos-delay={index * 100}
+            data-aos-duration="700">
             {item.icon}
             <span>{item.text}</span>
           </a>

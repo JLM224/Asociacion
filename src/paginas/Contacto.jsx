@@ -12,10 +12,16 @@ useEffect(() => {
     <>
     <Container fluid>
         <Row className="justify-content-center">
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6}
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="800">
             <FormC/>
             </Col>
-            <Col xs={12} md={6}>            
+            <Col xs={12} md={6}
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="800">
         <h5 className="text-center">Dónde nos ubicamos?</h5>
             <MediosDeComunicacion/>
             </Col>

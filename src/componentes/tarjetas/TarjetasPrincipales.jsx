@@ -6,7 +6,7 @@ const TarjetasPrincipales = () => {
     <>
     <Container fluid className="my-5">
       <Row className='g-3 equal-height-row'>
-      <Col xs="12" md="6">
+      <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
         <h2 className='text-center'>¿Quiénes somos?</h2>
@@ -27,7 +27,7 @@ const TarjetasPrincipales = () => {
       </Card.Body>
     </Card>
       </Col>
-      <Col xs="12" md="6">
+      <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
         <h2 className='text-center'>Nuestra misión</h2>
@@ -45,7 +45,7 @@ const TarjetasPrincipales = () => {
       </Card.Body>
     </Card>
       </Col>
-      <Col xs="12" md="6">
+      <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
         <h2 className='text-center'>Nuestra Actividad</h2>
@@ -66,7 +66,7 @@ const TarjetasPrincipales = () => {
       </Card.Body>
     </Card>
       </Col>
-      <Col xs="12" md="6">
+      <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
   <Card.Body>
     <h2 className='text-center'>Cómo te ayudamos?</h2>

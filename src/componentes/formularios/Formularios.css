@@ -1,0 +1,39 @@
+.formulario {
+  background-color: #ECF0F3;
+  border: none;  
+}
+.formulario h5 {
+  color: #345D73;
+  font-weight: 600;
+}
+.formulario .form-label {
+  color: #345D73;
+  font-weight: 500;
+}
+.formulario .form-control {
+  border: 1px solid #13C4BE;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+.formulario .form-control:focus {
+  border-color: #4DF9ED;
+  box-shadow: 0 0 0 0.2rem rgba(77, 249, 237, 0.25);
+}
+.btn.btn-personalizado {
+  background: linear-gradient(135deg,#345D73,#13C4BE);
+  border: none;
+  color: #ffffff;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.btn.btn-personalizado:hover {
+  background: linear-gradient(135deg, #345D73, #13C4BE);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 93, 115, 0.25);
+}
+.form-control.is-invalid {
+  border-color: red;
+}

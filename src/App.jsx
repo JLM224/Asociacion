@@ -9,12 +9,32 @@ import Error404 from "./paginas/Error404";
 import FooterC from "./componentes/footer/FooterC";
 import BotonWhatsapp from "./componentes/botones/BotonWhatsapp";
 import CharlasInstitucionales from "./paginas/CharlasInstitucionales";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import Aos from "aos";
 import './App.css';
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      once: true
+    })
+  }, [])
+
+  const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    Aos.refresh()
+  }, [pathname])
+
+  return null
+}
   return (
     <div className="contenedor">
       <Router>
+        <ScrollToTop />
         <NavbarC />
         <div className="contenido">
           <Routes>
@@ -29,7 +49,7 @@ const App = () => {
           <BotonWhatsapp/>
         </div>
       </Router>
-      <FooterC/>
+      <FooterC/>      
     </div>
   );
 };

@@ -8,11 +8,15 @@ useEffect(() => {
   cambiarTituloPagina("Error404")
 },[])
   return (
-    <Container className="text-center my-5">
+    <Container
+    className="text-center my-5"
+    data-aos="fade-up"
+    data-aos-duration="800">
       <h1 className="display-3">404</h1>
       <h2>Página no encontrada</h2>
       <p>Lo sentimos, la página que buscas no existe.</p>
-      <Button as={Link} to="/" variant="primary">
+      <Button as={Link} to="/" variant="primary"
+      data-aos="zoom-in" data-aos-delay="400">
         Volver al inicio
       </Button>
     </Container>
