@@ -6,13 +6,22 @@
   background-color: #25d366;
   color: white;
   font-size: 24px;
-  padding: 10px 14px;
+  padding: 9px 15px;
   border-radius: 50%;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
   z-index: 100;
 }
-.botonwhatsapp:hover{
+.botonwhatsapp:hover {
   background-color: #00ff62;
   transform: translateY(-50%) scale(1.1);
+}
+
+.botonwhatsapp svg {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
+  font-size: 25px;
 }

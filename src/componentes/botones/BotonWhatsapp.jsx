@@ -1,12 +1,11 @@
-import './BotonWhatsapp.css';
-import {FaWhatsapp} from "react-icons/fa";
+import "./BotonWhatsapp.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 const BotonWhatsapp = () => {
-const numero = "+5493815667496";
-const mensaje = "¡Hola! Quisiera más información sobre su trabajo.";
-const whatsappLink = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  const numero = "+5493815667496";
+  const mensaje = "¡Hola! Quisiera más información sobre su trabajo.";
+  const whatsappLink = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   return (
-    <>
     <a
       href={whatsappLink}
       className="botonwhatsapp"
@@ -15,8 +14,7 @@ const whatsappLink = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)
     >
       <FaWhatsapp />
     </a>
-    </>
-  )
-}
+  );
+};
 
-export default BotonWhatsapp
+export default BotonWhatsapp;
