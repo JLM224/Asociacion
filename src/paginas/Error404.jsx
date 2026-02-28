@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina";
+import '../componentes/formularios/Formularios.css'
 
 const Error404 = () => {
 useEffect(() => {
@@ -15,7 +16,7 @@ useEffect(() => {
       <h1 className="display-3">404</h1>
       <h2>Página no encontrada</h2>
       <p>Lo sentimos, la página que buscas no existe.</p>
-      <Button as={Link} to="/" variant="primary"
+      <Button className="btn btn-personalizado" as={Link} to="/" variant="primary"
       data-aos="zoom-in" data-aos-delay="400">
         Volver al inicio
       </Button>

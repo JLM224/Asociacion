@@ -1,10 +1,13 @@
 .footer {
   background-color: #005F73;
   color: white;
-  padding: 20px 0;
+}
+.footer-1 {
+  flex-grow: 1;
 }
 .footer a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer a:hover {
@@ -12,4 +15,13 @@
 }
 .adep {
   text-align: justify;
+}
+.copyright {
+  background-color: black;
+}
+.copyright-text {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
 }

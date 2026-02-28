@@ -12,7 +12,7 @@ function obtenerAnioActual() {
   return (
     <>
     <Container fluid className="footer">
-        <Row className="text-center g-2">
+        <Row className="text-center g-2 footer-1">
           <Col xs="12" md="4" className="d-flex flex-column align-items-center justify-content-center"
           data-aos="fade-up"
           data-aos-delay="0"
@@ -32,12 +32,17 @@ function obtenerAnioActual() {
           <Mapa/>
           </Col>
         </Row>
-        <Col xs="12" className="my-3 d-flex flex-column align-items-center justify-content-center"
-        data-aos="fade-up"
-        data-aos-delay="300"
-        data-aos-duration="800">
-        <p className="Adep">&copy; {obtenerAnioActual()} Asociacion Civil en defensa y proteccion de consumidores y usuarios </p>
+        <Row>
+        <Col xs="12" className="d-flex justify-content-center copyright"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="800">
+          <p className="copyright-text">
+            &copy; {obtenerAnioActual()} 
+            Asociacion Civil en defensa y proteccion de consumidores y usuarios
+          </p>
         </Col>
+        </Row>
     </Container>
     </>
   )

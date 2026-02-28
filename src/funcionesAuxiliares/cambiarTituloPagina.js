@@ -3,7 +3,7 @@ export const cambiarTituloPagina = (idPagina) => {
         "Pagina Principal": "Pagina Principal",
         "Nuestra Labor": "Nuestra Labor",
         "Sitios de Interes": "Sitios de Interes",
-        "Opiniones": "Opiniones",
+        "Nuestros Casos": "Nuestros Casos",
         "Contacto": "Contacto",
         "Programar Charla": "Programar Charla",
         "Error404": "Error404"

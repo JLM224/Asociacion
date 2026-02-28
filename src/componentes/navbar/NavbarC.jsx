@@ -9,7 +9,7 @@ const NavbarC = () => {
     <>
     <Navbar expand="lg" className="navbar" variant="dark">
       <Container className='text-white'>
-        <NavLink className="nav-link" to="/">
+        <NavLink className="nav-link nav-logo" to="/">
         <img src="/logo.jpeg" alt="Logo" className="logo"/>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +18,7 @@ const NavbarC = () => {
             <NavLink to="/" className="nav-link">Bienvenidos</NavLink>
             <NavLink to="/NuestraLabor" className="nav-link">Nuestra Labor</NavLink>
             <NavLink to="/SitiosDeInteres" className="nav-link">Sitios de Interés</NavLink>
-            <NavLink to="/Opina" className="nav-link">Opiná</NavLink>
+            <NavLink to="/NuestrosCasos" className="nav-link">Nuestros Casos</NavLink>
             <NavLink to="/Contacto" className="nav-link">Contactános</NavLink>
           </Nav>          
         </Navbar.Collapse>

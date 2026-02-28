@@ -2,13 +2,13 @@ import { useEffect } from "react"
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
 
 
-const Opina = () => {
+const NuestrosCasos = () => {
   useEffect(() => {
-  cambiarTituloPagina("Opiniones")
+  cambiarTituloPagina("Nuestros Casos")
 },[])
   return (
-    <>Opiná</>
+    <>Nuestros Casos</>
   )
 }
 
-export default Opina
+export default NuestrosCasos
