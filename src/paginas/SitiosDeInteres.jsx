@@ -43,7 +43,7 @@ useEffect(() => {
   return (
     <Container fluid className="my-3">
   <Row className="g-3">
-    <h1 className="text-center" data-aos="fade-down" data-aos-delay="0">
+    <h1 data-aos="fade-down" data-aos-delay="0">
       Sitios de Interés para consumidores
     </h1>
 

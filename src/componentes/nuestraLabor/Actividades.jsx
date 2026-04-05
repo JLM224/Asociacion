@@ -47,8 +47,8 @@ const acciones = [{
   return (
     <>
     <Container fluid className='mt-4'>
-      <h1 className="text-center t1">¿Qué Hacemos?</h1>
-      <h4 className='t2' style={{ textAlign: 'justify' }} >Desarrollamos una variedad de actividades orientadas al fortalecimiento de los derechos de los consumidores:</h4>
+      <h1 className="t1">¿Qué Hacemos?</h1>
+      <h4 className='t2'>Desarrollamos una variedad de actividades orientadas al fortalecimiento de los derechos de los consumidores:</h4>
     </Container>
     <Container fluid className="my-4">
         <Row className="g-3">

@@ -32,13 +32,13 @@ const links = [
     },
     {
       icon: <FaInstagram />,
-      text: "Instagram",
-      href: "https://www.instagram.com/tuusuario",
+      text: "Seguinos en Instagram!",
+      href: "https://www.instagram.com/adepcu2025",
     },
     {
       icon: <FaFacebook />,
-      text: "Facebook",
-      href: "https://www.facebook.com/tuusuario",
+      text: "Seguinos en Facebook!",
+      href: "https://www.facebook.com/61579450741591",
     }
 ]
   return (

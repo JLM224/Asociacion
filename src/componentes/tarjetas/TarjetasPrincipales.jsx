@@ -9,7 +9,7 @@ const TarjetasPrincipales = () => {
       <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
-        <h2 className='text-center'>¿Quiénes somos?</h2>
+        <h2>¿Quiénes somos?</h2>
         <p className="text-muted">
         <strong>REPRESENTAMOS ADEP-CU</strong>, una asociación civil sin fines de lucro, con sede en San Miguel de Tucumán, creada para defender, proteger, promover y garantizar los derechos de los consumidores y usuarios de bienes y servicios.
         </p> 
@@ -30,7 +30,7 @@ const TarjetasPrincipales = () => {
       <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
-        <h2 className='text-center'>Nuestra misión</h2>
+        <h2>Nuestra misión</h2>
         <p className="text-muted">
         Garantizar que cada consumidor y usuario pueda acceder a información clara, veraz y suficiente, y orientar como actuar frente a situaciones de abuso, incumplimiento o trato indigno para ejercer sus derechos con acompañamiento de nuestro equipo especializado. Promover una cultura de consumo consciente, responsable y respetuosa de los derechos fundamentales de las personas.        
         </p>
@@ -48,7 +48,7 @@ const TarjetasPrincipales = () => {
       <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
       <Card.Body>
-        <h2 className='text-center'>Nuestra Actividad</h2>
+        <h2>Nuestra Actividad</h2>
         <p className="text-muted">
         En ADEP-CU, brindamos orientación integral para la defensa efectiva en todo tipo de relaciones de consumo y servicios.        
         </p>
@@ -69,7 +69,7 @@ const TarjetasPrincipales = () => {
       <Col xs="12" md="6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
       <Card className='w-100 h-100 tarjeta'>
   <Card.Body>
-    <h2 className='text-center'>Cómo te ayudamos?</h2>
+    <h2>Cómo te ayudamos?</h2>
     <p className="text-muted">
       <strong>Escuchamos tu caso</strong> — Te orientamos sobre tus derechos y las opciones disponibles.
     </p>
