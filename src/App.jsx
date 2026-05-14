@@ -1,15 +1,15 @@
+import DesplazamientoArriba from "./funcionesAuxiliares/DesplazamientoArriba";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import NavbarC from "./componentes/navbar/NavbarC";
+import CharlasInstitucionales from "./paginas/CharlasInstitucionales";
+import BotonWhatsapp from "./componentes/botones/BotonWhatsapp";
 import PaginaPrincipal from "./paginas/PaginaPrincipal";
-import NuestraLabor from "./paginas/NuestraLabor";
 import SitiosDeInteres from "./paginas/SitiosDeInteres";
 import NuestrosCasos from "./paginas/NuestrosCasos";
+import NavbarC from "./componentes/navbar/NavbarC";
+import FooterC from "./componentes/footer/FooterC";
+import NuestraLabor from "./paginas/NuestraLabor";
 import Contacto from "./paginas/Contacto";
 import Error404 from "./paginas/Error404";
-import FooterC from "./componentes/footer/FooterC";
-import BotonWhatsapp from "./componentes/botones/BotonWhatsapp";
-import CharlasInstitucionales from "./paginas/CharlasInstitucionales";
-import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Aos from "aos";
 import './App.css';
@@ -17,24 +17,14 @@ import './App.css';
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 800,
-      once: true
+    once: true,
+    offset: 80,
     })
   }, [])
-
-  const ScrollToTop = () => {
-  const { pathname } = useLocation()
-
-  useEffect(() => {
-    Aos.refresh()
-  }, [pathname])
-
-  return null
-}
   return (
     <div className="contenedor">
       <Router>
-        <ScrollToTop />
+        <DesplazamientoArriba />
         <NavbarC />
         <div className="contenido">
           <Routes>
@@ -51,8 +41,8 @@ const App = () => {
       </Router>
       <FooterC/>      
     </div>
-  );
-};
+  )
+}
 
 
 export default App

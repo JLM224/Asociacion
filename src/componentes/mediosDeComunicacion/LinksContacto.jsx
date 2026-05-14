@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap"
+import { Container } from "react-bootstrap";
 import {
   FaWhatsapp,
   FaInstagram,
@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const LinksContacto = () => {
-const links = [
+  const links = [
     {
       icon: <FaMapMarkerAlt />,
       text: "Virgen de la Merced 105, San Miguel de Tucumán",
@@ -39,27 +39,32 @@ const links = [
       icon: <FaFacebook />,
       text: "Seguinos en Facebook!",
       href: "https://www.facebook.com/61579450741591",
-    }
-]
+    },
+  ];
+
   return (
-    <>
-    <Container fluid className="text-center d-flex flex-column gap-2 my-3">
-        {links.map((item, index) => (
-          <a
-            key={index}
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-decoration-none d-flex align-items-center justify-content-center gap-2"
-            data-aos="fade-right"
-            data-aos-delay={index * 100}
-            data-aos-duration="700">
-            {item.icon}
-            <span>{item.text}</span>
-          </a>
-        ))}
-      </Container>
-    </>
+    <Container
+      fluid
+      className="text-center d-flex flex-column gap-3 my-4 px-3"
+    >
+      {links.map((item, index) => (
+        <a
+          key={index}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-decoration-none d-flex align-items-center justify-content-center gap-2 contacto-link"
+          data-aos="fade-right"
+          data-aos-delay={index * 120}
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
+          data-aos-once="true"
+        >
+          <span className="contacto-icon">{item.icon}</span>
+          <span className="contacto-text">{item.text}</span>
+        </a>
+      ))}
+    </Container>
   )
 }
 

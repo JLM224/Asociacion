@@ -1,25 +1,22 @@
-import { useEffect } from 'react'
-import CardsCA from '../componentes/cards/CardsCA'
-import Carrusel from '../componentes/carrusel/Carrusel'
-import TarjetasPrincipales from '../componentes/tarjetas/TarjetasPrincipales'
 import { cambiarTituloPagina } from '../funcionesAuxiliares/CambiarTituloPagina'
+import TarjetasPrincipales from '../componentes/tarjetas/TarjetasPrincipales'
+import Carrusel from '../componentes/carrusel/Carrusel'
+import CardsCA from '../componentes/cards/CardsCA'
+import { useEffect } from 'react'
 
 const PaginaPrincipal = () => {
   useEffect(() => {
     cambiarTituloPagina("Pagina Principal");
-  }, []);
-
+  }, [])
   return (
     <>
-      <div data-aos="fade-up">
+      <div>
         <Carrusel />
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="200">
+      </div>      
+      <div>
         <TarjetasPrincipales />
-      </div>
-      
-      <div data-aos="fade-up" data-aos-delay="400">
+      </div>      
+      <div>
         <CardsCA />
       </div>
     </>

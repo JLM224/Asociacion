@@ -1,13 +1,15 @@
-import { useEffect } from "react"
+import GaleriaImagenes from "../componentes/galeriaImagenes/GaleriaImagenes"
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
-
+import { useEffect } from "react"
 
 const NuestrosCasos = () => {
   useEffect(() => {
   cambiarTituloPagina("Nuestros Casos")
 },[])
   return (
-    <>Nuestros Casos</>
+    <>
+    <GaleriaImagenes/>
+    </>
   )
 }
 

@@ -1,13 +1,13 @@
-import { useEffect } from "react"
-import Actividades from "../componentes/nuestraLabor/Actividades"
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
+import Actividades from "../componentes/nuestraLabor/Actividades"
+import { useEffect } from "react"
 
 const NuestraLabor = () => {
 useEffect(() => {
   cambiarTituloPagina("Nuestra Labor")
 },[])
   return (
-    <div data-aos="fade-right">
+    <div>
       <Actividades />
     </div>
   )

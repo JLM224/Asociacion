@@ -1,6 +1,6 @@
-import { useEffect } from "react"
-import FormInstituciones from "../componentes/formularios/FormInstituciones"
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina"
+import FormInstituciones from "../componentes/formularios/FormInstituciones"
+import { useEffect } from "react"
 
 const CharlasInstitucionales = () => {
 useEffect(() => {

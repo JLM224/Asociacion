@@ -1,8 +1,8 @@
-import { useEffect } from "react";
-import { Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { cambiarTituloPagina } from "../funcionesAuxiliares/CambiarTituloPagina";
 import '../componentes/formularios/Formularios.css'
+import { Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Error404 = () => {
 useEffect(() => {
