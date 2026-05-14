@@ -33,7 +33,7 @@ const LinksContacto = () => {
     {
       icon: <FaInstagram />,
       text: "Seguinos en Instagram!",
-      href: "https://www.instagram.com/adepcu2025",
+      href: "https://www.instagram.com/adep_cu",
     },
     {
       icon: <FaFacebook />,
