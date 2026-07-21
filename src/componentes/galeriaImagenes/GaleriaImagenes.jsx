@@ -9,7 +9,18 @@ const imagenes = [
   "/Img3.jpg",
   "/Img4.jpg",
   "/Img5.jpg",
-];
+]
+
+const campaniaEducandoConsumidores = [
+  "/Educ-consumidores.jpg",
+  "/Educ-consumidores2.jpg"
+]
+
+const charlaDerechoPrevisional = [
+  "/Charla-derecho-previsional.jpg",
+  "/Img6.jpg",
+  "/Img7.jpg"
+]
 
 const GaleriaImagenes = () => {
   const [imagenActiva, setImagenActiva] = useState(null);
@@ -69,6 +80,65 @@ const GaleriaImagenes = () => {
             <source src="/Video.mp4" type="video/mp4" />
             Tu navegador no soporta videos.
           </video>
+        </div>
+      </section>
+
+      <section className="galeria-section">
+        <div className="contenido-header" data-aos="fade-up">
+          <h2 className="T2">
+            Campaña Educando a los Consumidores
+          </h2>
+
+          <p className="Texto">
+            “Durante la charla de educacion a consumidores, los participantes 
+            recibieron información sobre sus derechos y responsabilidades como consumidores,
+            asi como recomendaciomes 
+             para realizar compras informadas y seguras. La actividad incluyó un espacio de intercambio de preguntas y experiencias, promoviendo la participación y el aprendizaaje de los presentes”
+          </p>
+        </div>
+
+        <div className="galeria-grid">
+          {campaniaEducandoConsumidores.map((img, index) => (
+            <div
+              className="card-imagen"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+              onClick={() => setImagenActiva(img)}
+            >
+              <img src={img} alt={`Imagen ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="galeria-section">
+        <div className="contenido-header" data-aos="fade-up">
+          <h2 className="T2">
+            Charla sobre derecho previsional
+          </h2>
+
+          <p className="Texto">
+            “En esta charla abordamos los principales aspectos del derecho previsional siendo uno 
+            de los temas que más consultas genera analizando los desafios actuales del sistema y 
+            las novedades más relevantes. A lo largo del encuentro se desarrollaron temas 
+            vinculados los requisitos para acceder a las prestaciones, los recientes cambios 
+            normativos generando un espacio de intercambio donde los participantes pudieron 
+            plantear consultas y compartir experiencias sobre lo que es el derecho previsional.”
+          </p>
+        </div>
+
+        <div className="galeria-grid">
+          {charlaDerechoPrevisional.map((img, index) => (
+            <div
+              className="card-imagen"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+              onClick={() => setImagenActiva(img)}
+            >
+              <img src={img} alt={`Imagen ${index + 1}`} />
+            </div>
+          ))}
         </div>
       </section>
 
