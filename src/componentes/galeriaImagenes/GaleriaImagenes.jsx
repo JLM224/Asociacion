@@ -142,10 +142,9 @@ const GaleriaImagenes = () => {
             </div>
           ))}
         </div>
-        <div className="my-3 d-flex justify-content-center">
+        <div className="my-3 video-container">
           <video controls>
             <source src="/Disertacion-Video.mp4" type="video/mp4" />
-            Tu navegador no soporta videos.
           </video>
         </div>
       </section>
