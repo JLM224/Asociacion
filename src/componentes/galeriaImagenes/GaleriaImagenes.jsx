@@ -11,15 +11,19 @@ const imagenes = [
   "/Img5.jpg",
 ]
 
-const campaniaEducandoConsumidores = [
-  "/Educ-consumidores.jpg",
-  "/Educ-consumidores2.jpg"
-]
-
 const charlaDerechoPrevisional = [
   "/Charla-derecho-previsional.jpg",
   "/Img6.jpg",
   "/Img7.jpg"
+]
+
+const disertacionLegislatura = [
+  "/Disertacion.jpeg",
+  "/Disertacion1.jpeg",
+  "/Disertacion2.jpeg",
+  "/Disertacion3.jpeg",
+  "/Disertacion4.jpeg",
+  "/Disertacion5.jpeg",
 ]
 
 const GaleriaImagenes = () => {
@@ -66,8 +70,7 @@ const GaleriaImagenes = () => {
         <div
           className="video-container"
           data-aos="fade-up"
-          data-aos-delay="300"
-        >
+          data-aos-delay="300">
           <h2 className="video-titulo">Jornada en la Legislatura de Tucumán</h2>
 
           <p className="Texto">
@@ -83,34 +86,6 @@ const GaleriaImagenes = () => {
         </div>
       </section>
 
-      <section className="galeria-section">
-        <div className="contenido-header" data-aos="fade-up">
-          <h2 className="T2">
-            Campaña Educando a los Consumidores
-          </h2>
-
-          <p className="Texto">
-            “Durante la charla de educacion a consumidores, los participantes 
-            recibieron información sobre sus derechos y responsabilidades como consumidores,
-            asi como recomendaciomes 
-             para realizar compras informadas y seguras. La actividad incluyó un espacio de intercambio de preguntas y experiencias, promoviendo la participación y el aprendizaaje de los presentes”
-          </p>
-        </div>
-
-        <div className="galeria-grid">
-          {campaniaEducandoConsumidores.map((img, index) => (
-            <div
-              className="card-imagen"
-              key={index}
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
-              onClick={() => setImagenActiva(img)}
-            >
-              <img src={img} alt={`Imagen ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </section>
       <section className="galeria-section">
         <div className="contenido-header" data-aos="fade-up">
           <h2 className="T2">
@@ -139,6 +114,39 @@ const GaleriaImagenes = () => {
               <img src={img} alt={`Imagen ${index + 1}`} />
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="galeria-section">
+        <div className="contenido-header" data-aos="fade-up">
+          <h2 className="T2">
+            Disertación en la Honorable Legislatura de Tucumán sobre los derechos del consumidor frente
+            a préstamos, deudas y tarjetas de crédito
+          </h2>
+
+          <p className="Texto">
+            “En la vida cotidiana, muchas personas recurren a préstamos y tarjetas de crédito, lo que puede generar deudas y situaciones de vulnerabilidad. Por eso, es fundamental conocer los derechos que protegen a los consumidores y las herramientas disponibles para evitar abusos y reclamar ante situaciones injustas. Por lo que en esta disertación hablaremos sobre aquellos derechos y normas que buscan garantizar que las relaciones entre consumidores y entidades financieras sean transparentes y justas, analizando qué información se debe recibir antes de contratar un servicio financiero, sus derechos frente al endeudamiento y las prácticas de cobro y qué aspectos se deben tener en cuenta al utilizar una tarjeta de crédito con el objetivo de comprender que al conocer nuestros derechos como consumidores no solo nos permite defendernos ante situaciones injustas, sino también tomar decisiones financieras de una manera más responsable y segura.”
+          </p>
+        </div>
+
+        <div className="galeria-grid">
+          {disertacionLegislatura.map((img, index) => (
+            <div
+              className="card-imagen"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+              onClick={() => setImagenActiva(img)}
+            >
+              <img src={img} alt={`Imagen ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <div className="my-3 d-flex justify-content-center">
+          <video controls>
+            <source src="/Disertacion-Video.mp4" type="video/mp4" />
+            Tu navegador no soporta videos.
+          </video>
         </div>
       </section>
 
